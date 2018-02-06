@@ -1,0 +1,13 @@
+<!-- Adding HDFC Web Proj  
+		<dependency>
+			<groupId>com.hdfc</groupId>
+	        <artifactId>HDFCWeb</artifactId>
+	        <version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		--Adding HDFC Stand alone Proj  
+		<dependency>
+			  <groupId>com.hdfc</groupId>
+			  <artifactId>HDFCUtil</artifactId>
+			  <version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		-->

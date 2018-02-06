@@ -1,0 +1,14 @@
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  <servlet-name>restEasy</servlet-name>
+  <servlet-class>org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher</servlet-class>
+  <load-on-startup>1</load-on-startup>
+  
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>restEasy</servlet-name>
+  <url-pattern>/*</url-pattern>
+   </servlet-mapping>
+</web-app>
