@@ -1,0 +1,22 @@
+<!DOCTYPE beans PUBLIC "-//SPRING/DTD BEAN 2.0/EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd"> 
+
+<beans>
+<bean id="handlerMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+<property name="mappings">
+<props>
+<prop key="/hello.do">helloController</prop>
+<prop key="/home.do">homeController</prop>
+
+</props>
+</property>
+</bean>
+<bean id="homeController" class="com.nt.controller.HomeController"/>
+<bean id="helloController" class="com.nt.controller.HelloController">
+<property name="helloService" ref="helloService" />
+
+</bean>
+<bean id="helloService" class="com.nt.service.HelloService"></bean>
+
+
+
+</beans>
