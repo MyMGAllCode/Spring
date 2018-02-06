@@ -1,0 +1,7 @@
+SQL> create table student (fname varchar2(20),lname varchar2(20),email varchar2(30),password varchar2(15));
+
+Database user Name:system
+password:manager
+
+
+///set build path of  odjbc6.jar  and servlet-api.jar and jsp-api.jar 
