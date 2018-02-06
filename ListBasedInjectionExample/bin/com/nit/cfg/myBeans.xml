@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+<bean id="product1" class="com.nit.bean.Product">
+<property name="productId" value="4001"/>
+<property name="productName" value="keyboard"/>
+<property name="productPrice" value="400"/>
+
+
+</bean>
+<bean id="product2" class="com.nit.bean.Product">
+<property name="productId" value="4002"/>
+<property name="productName" value="Mouse"/>
+<property name="productPrice" value="200"/>
+
+
+</bean>
+<bean id="product3" class="com.nit.bean.Product">
+<property name="productId" value="4003"/>
+<property name="productName" value="LCD"/>
+<property name="productPrice" value="4000"/>
+
+
+</bean>
+<bean id="shoppingCart" class="com.nit.bean.ShoppingCart">
+<property name="products">
+<list>
+<ref bean="product1"/>
+<ref bean="product2"/>
+<ref bean="product3"/>
+</list>
+
+</property>
+</bean>
+
+<bean id="cashier" class="com.nit.bean.Cashier">
+<constructor-arg index="0" value="E://HyderabadTRANINGPractical//Spring//" />
+<constructor-arg index="1" value="productinformation" />
+
+</bean>
+</beans>

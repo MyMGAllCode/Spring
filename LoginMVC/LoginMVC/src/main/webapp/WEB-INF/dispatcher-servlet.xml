@@ -1,0 +1,49 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd 
+	http://www.springframework.org/schema/context 
+	http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+  <!--   <context:annotation-config/> -->
+
+
+	<!-- <bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+
+		<property name="mappings">
+			<props>
+				<prop key="/student.htm">std</prop>
+			</props>
+
+		</property>
+	</bean>
+	<bean id="std" class="com.controller.StudentController">
+		<property name="service" ref="service" />
+		<property name="formView" value="student" />
+		<property name="successView" value="result" />
+		<property name="commandClass" value="com.command.StudentCommand" />
+		<property name="commandName" value="stCmd" />
+		<property name="sessionForm" value="true" />
+
+	</bean>
+	
+
+
+	<bean id="pvc1" class="org.springframework.web.servlet.mvc.ParameterizableViewController"> 
+		<property name="viewName" value="home" /> </bean> -->
+
+<bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping"/>
+
+<context:component-scan base-package="com.controller">
+</context:component-scan>
+
+
+
+	<bean id="viewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/pages/" />
+		<property name="suffix" value=".jsp" />
+
+	</bean>
+
+</beans>
