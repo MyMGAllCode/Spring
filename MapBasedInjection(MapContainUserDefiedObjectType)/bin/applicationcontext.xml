@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd"> 
+			
+			<!-- <beans xmlns="http://www.springframework.org/schema/beans"
+			xmlns:xsi="http://www.3.org/2001/XMLSchema-instance" 
+			xsi:schemaLocation="http://www.springframework.org/schema/beans  http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+		 -->
+		 <beans>
+			<bean id="answer1" class="com.nareshit.Answer">
+			<property name="id" value="1"/>
+			<property name="answer" value="Spring is a light weight Framework"/>
+			<property name="postedDate" value="19/10/2016"/>
+			
+			</bean>
+	
+			<bean id="answer2" class="com.nareshit.Answer">
+			<property name="id" value="2"/>
+			<property name="answer" value="Spring is a noninvasive Framework"/>
+			<property name="postedDate" value="19/10/2016"/>
+			
+			</bean>
+			<bean id="answer3" class="com.nareshit.Answer">
+			<property name="id" value="2"/>
+			<property name="answer" value="Spring is SemiFinished Project Framework"/>
+			<property name="postedDate" value="18/10/2016"/>
+			
+			</bean>
+			<bean id="user1" class="com.narehit.User">
+			<property name="id" value="101"/>
+			<property name="name" value="Dharmendra"/>
+			<property name="email" value="dkp@gmail.com"/>
+			</bean>
+			
+			<bean id="user2" class="com.narehit.User">
+			<property name="id" value="102"/>
+			<property name="name" value="Suresh"/>
+			<property name="email" value="suresh@gmail.com"/>
+			</bean>
+			<bean id="user3" class="com.narehit.User">
+			<property name="id" value="103"/>
+			<property name="name" value="Ajay"/>
+			<property name="email" value="Ajay@gmail.com"/>
+			</bean>
+			<bean id="questions" class="com.nareshit.Question">
+			<property name="id" value="001"/>
+			<property name="question" value="What is Spring"/>
+			<property name="answer">
+			<map>
+			<entry key-ref="answer1" value-ref="user1"></entry>
+			<entry key-ref="answer2" value-ref="user2"></entry>
+			<entry key-ref="answer3" value-ref="user3"></entry>
+			
+			</map>
+			</property>
+						</bean>
+			
+			
+			</beans>

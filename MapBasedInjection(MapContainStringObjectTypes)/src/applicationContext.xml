@@ -1,0 +1,25 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+			
+	<beans>		
+<bean id="question" class="com.nt.Question">
+<constructor-arg value="101"/>
+<constructor-arg value="What is Java?"/>
+<constructor-arg>
+<map>
+
+
+<entry key="Java Is A Programming Language" value="Ajay"/>
+<entry key="Java is a Object Oriented PROGRAMMING Language" value="Dharmendra"/>
+<entry key="Java is a platform independent Language" value="Suresh"/>
+</map>
+
+
+
+</constructor-arg>
+
+
+
+
+</bean>
+</beans>
