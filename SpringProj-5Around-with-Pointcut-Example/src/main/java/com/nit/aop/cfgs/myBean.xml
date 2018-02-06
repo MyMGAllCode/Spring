@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd">
+	<bean id="customerService" class="com.nit.aop.services.CustomerServiceImpl">
+		<property name="name" value="Dharmendra" />
+		<property name="url" value="http://www.seekzed.com" />
+	</bean>
+	<bean id="loggingBeforeAdvice" class="com.nit.aop.advices.LoggingBeforeAdvice">
+	</bean>
+
+	<!-- //THIS IS USEING BY DefaultPointcutAdvisor -->
+
+	<!-- <bean id="nameMatchMethodPointcut" class="org.springframework.aop.support.NameMatchMethodPointcut"> 
+		<property name="mappedName" value="printURL" /> </bean> <bean id="nameMatchMethodAdvisor" 
+		class="org.springframework.aop.support.DefaultPointcutAdvisor"> <property 
+		name="pointcut" ref="nameMatchMethodPointcut" /> <property name="advice" 
+		ref="loggingBeforeAdvice"></property> </bean> -->
+
+
+
+	<!--This is using by NameMatchMethodPointcutAdvisor -->
+	<!-- <bean id="nameMatchMethodPointcutAdvisor"
+	class="org.springframework.aop.support.NameMatchMethodPointcutAdvisor">
+	<property name="mappedNames">
+		<list>
+			<value>printName</value>
+			<value>printURL</value>
+			<value>printException</value>
+		</list>
+	</property>
+	<property name="advice" ref="loggingBeforeAdvice" />
+</bean> -->
+
+
+<!-- We can use Here With regularExpression Method Pointcut: RegexpMethodPointcut  -->
+<bean id="regexpMethodPointcoutAdvisor"
+	class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
+	<property name="patterns">
+		<list>
+			<value>.*URL.*</value>
+		</list>
+	</property>
+	<property name="advice" ref="loggingBeforeAdvice" />
+</bean>
+
+
+	<bean id="customerServiceProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+
+	<property name="target" ref="customerService" />
+	<property name="proxyInterfaces" value="com.nit.aop.services.CustomerService" />
+	<!-- <property name="interceptorNames" value="nameMatchMethodAdvisor" /> -->
+	<!-- <property name="interceptorNames" value="nameMatchMethodPointcutAdvisor" 
+		/> -->
+	<property name="interceptorNames" value="regexpMethodPointcoutAdvisor" />
+</bean>
+
+
+</beans>

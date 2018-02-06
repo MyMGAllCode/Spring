@@ -1,0 +1,14 @@
+create table USER_Details(userId number(10) primary key, name varchar2(20),mobile varchar2(20),city varchar2(20),state varchar2(20),education varchar2(20),
+jobtype varchar2(20),salary number(8));
+
+
+
+
+	userId;
+	private String name;
+	private String mobile;
+	private String city;
+	private String state;
+	private String education;
+	private String jobtype;
+	private Double salary;
