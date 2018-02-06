@@ -1,0 +1,28 @@
+<beans xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xmlns:context="http://www.springframework.org/schema/context"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd  
+http://www.springframework.org/schema/context  
+http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+<bean id="loggingBeforeAdvice" class="com.nit.aop.advices.LoggingBeforeAdvice"/>
+<bean id="loggingAfterAdvice" class="com.nit.aop.advices.LoggingAfterAdvice"/>
+
+
+<bean id="cutomerService" class="com.nit.aop.services.CustomerServiceImpl">
+<property name="name" value="Dharmendra"/>
+<property name="url" value="http://www.seekzed.com"></property>
+</bean>
+<bean id="cutomerServiceProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+<property name="proxyInterfaces"  value="com.nit.aop.services.CustomerService"/>
+<property name="interceptorNames" >
+<!-- <value>loggingBeforeAdvice</value> -->
+<value>loggingAfterAdvice</value>
+</property>
+<property name="target" ref="cutomerService"/>
+
+</bean>
+
+</beans>

@@ -1,0 +1,914 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sun Dec 25 22:29:00 IST 2016<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.context.support.ClassPathXmlApplicationContext category">org.springframework.context.support.ClassPathXmlApplicationContext</td>
+<td title="Message">Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@176f3f8: startup date [Sun Dec 25 22:29:01 IST 2016]; root of context hierarchy</td>
+</tr>
+
+<tr>
+<td>332</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.beans.factory.xml.XmlBeanDefinitionReader category">org.springframework.beans.factory.xml.XmlBeanDefinitionReader</td>
+<td title="Message">Loading XML bean definitions from class path resource [com/nit/aop/config/applicationContext.xml]</td>
+</tr>
+
+<tr>
+<td>2106</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>WARN</strong></font></td>
+<td title="org.springframework.context.support.ClassPathXmlApplicationContext category">org.springframework.context.support.ClassPathXmlApplicationContext</td>
+<td title="Message">Exception encountered during context initialization - cancelling refresh attempt</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.nit.advice.LogginBeforeAdvice] for bean with name 'loggingBeforeAdvice' defined in class path resource [com/nit/aop/config/applicationContext.xml]; nested exception is java.lang.ClassNotFoundException: com.nit.advice.LogginBeforeAdvice
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1351)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:628)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:597)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1444)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:974)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:752)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:834)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:537)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:139)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:83)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.nit.aop.client.Test.main(Test.java:11)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Caused by: java.lang.ClassNotFoundException: com.nit.advice.LogginBeforeAdvice
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.util.ClassUtils.forName(ClassUtils.java:250)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanDefinition.resolveBeanClass(AbstractBeanDefinition.java:394)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory.doResolveBeanClass(AbstractBeanFactory.java:1396)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1343)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	... 10 more
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sun Dec 25 22:29:48 IST 2016<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.context.support.ClassPathXmlApplicationContext category">org.springframework.context.support.ClassPathXmlApplicationContext</td>
+<td title="Message">Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@176f3f8: startup date [Sun Dec 25 22:29:48 IST 2016]; root of context hierarchy</td>
+</tr>
+
+<tr>
+<td>110</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.beans.factory.xml.XmlBeanDefinitionReader category">org.springframework.beans.factory.xml.XmlBeanDefinitionReader</td>
+<td title="Message">Loading XML bean definitions from class path resource [com/nit/aop/config/applicationContext.xml]</td>
+</tr>
+
+<tr>
+<td>324</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>WARN</strong></font></td>
+<td title="org.springframework.context.support.ClassPathXmlApplicationContext category">org.springframework.context.support.ClassPathXmlApplicationContext</td>
+<td title="Message">Exception encountered during context initialization - cancelling refresh attempt</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.nit.advice.LoggingBeforeAdvice] for bean with name 'loggingBeforeAdvice' defined in class path resource [com/nit/aop/config/applicationContext.xml]; nested exception is java.lang.ClassNotFoundException: com.nit.advice.LoggingBeforeAdvice
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1351)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:628)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:597)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1444)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:974)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:752)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:834)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:537)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:139)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:83)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.nit.aop.client.Test.main(Test.java:11)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Caused by: java.lang.ClassNotFoundException: com.nit.advice.LoggingBeforeAdvice
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.util.ClassUtils.forName(ClassUtils.java:250)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanDefinition.resolveBeanClass(AbstractBeanDefinition.java:394)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory.doResolveBeanClass(AbstractBeanFactory.java:1396)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1343)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	... 10 more
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sun Dec 25 22:30:24 IST 2016<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.context.support.ClassPathXmlApplicationContext category">org.springframework.context.support.ClassPathXmlApplicationContext</td>
+<td title="Message">Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@176f3f8: startup date [Sun Dec 25 22:30:24 IST 2016]; root of context hierarchy</td>
+</tr>
+
+<tr>
+<td>52</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.beans.factory.xml.XmlBeanDefinitionReader category">org.springframework.beans.factory.xml.XmlBeanDefinitionReader</td>
+<td title="Message">Loading XML bean definitions from class path resource [com/nit/aop/config/applicationContext.xml]</td>
+</tr>
+
+<tr>
+<td>212</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>WARN</strong></font></td>
+<td title="org.springframework.context.support.ClassPathXmlApplicationContext category">org.springframework.context.support.ClassPathXmlApplicationContext</td>
+<td title="Message">Exception encountered during context initialization - cancelling refresh attempt</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.nit.advices.LoggingBeforeAdvice] for bean with name 'loggingBeforeAdvice' defined in class path resource [com/nit/aop/config/applicationContext.xml]; nested exception is java.lang.ClassNotFoundException: com.nit.advices.LoggingBeforeAdvice
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1351)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:628)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:597)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1444)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:974)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:752)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:834)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:537)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:139)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:83)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.nit.aop.client.Test.main(Test.java:11)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Caused by: java.lang.ClassNotFoundException: com.nit.advices.LoggingBeforeAdvice
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.util.ClassUtils.forName(ClassUtils.java:250)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanDefinition.resolveBeanClass(AbstractBeanDefinition.java:394)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory.doResolveBeanClass(AbstractBeanFactory.java:1396)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1343)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	... 10 more
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sun Dec 25 22:32:18 IST 2016<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.context.support.ClassPathXmlApplicationContext category">org.springframework.context.support.ClassPathXmlApplicationContext</td>
+<td title="Message">Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@176f3f8: startup date [Sun Dec 25 22:32:18 IST 2016]; root of context hierarchy</td>
+</tr>
+
+<tr>
+<td>52</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.beans.factory.xml.XmlBeanDefinitionReader category">org.springframework.beans.factory.xml.XmlBeanDefinitionReader</td>
+<td title="Message">Loading XML bean definitions from class path resource [com/nit/aop/config/applicationContext.xml]</td>
+</tr>
+
+<tr>
+<td>229</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>WARN</strong></font></td>
+<td title="org.springframework.context.support.ClassPathXmlApplicationContext category">org.springframework.context.support.ClassPathXmlApplicationContext</td>
+<td title="Message">Exception encountered during context initialization - cancelling refresh attempt</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.nit.advices.LoggingBeforeAdvice] for bean with name 'loggingBeforeAdvice' defined in class path resource [com/nit/aop/config/applicationContext.xml]; nested exception is java.lang.ClassNotFoundException: com.nit.advices.LoggingBeforeAdvice
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1351)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:628)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:597)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1444)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:974)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:752)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:834)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:537)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:139)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:83)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.nit.aop.client.Test.main(Test.java:11)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Caused by: java.lang.ClassNotFoundException: com.nit.advices.LoggingBeforeAdvice
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.util.ClassUtils.forName(ClassUtils.java:250)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanDefinition.resolveBeanClass(AbstractBeanDefinition.java:394)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory.doResolveBeanClass(AbstractBeanFactory.java:1396)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1343)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	... 10 more
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sun Dec 25 22:33:49 IST 2016<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.context.support.ClassPathXmlApplicationContext category">org.springframework.context.support.ClassPathXmlApplicationContext</td>
+<td title="Message">Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@176f3f8: startup date [Sun Dec 25 22:33:49 IST 2016]; root of context hierarchy</td>
+</tr>
+
+<tr>
+<td>52</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.beans.factory.xml.XmlBeanDefinitionReader category">org.springframework.beans.factory.xml.XmlBeanDefinitionReader</td>
+<td title="Message">Loading XML bean definitions from class path resource [com/nit/aop/config/applicationContext.xml]</td>
+</tr>
+
+<tr>
+<td>210</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>WARN</strong></font></td>
+<td title="org.springframework.context.support.ClassPathXmlApplicationContext category">org.springframework.context.support.ClassPathXmlApplicationContext</td>
+<td title="Message">Exception encountered during context initialization - cancelling refresh attempt</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.nit.advices.LoggingBeforeAdvice] for bean with name 'loggingBeforeAdvice' defined in class path resource [com/nit/aop/config/applicationContext.xml]; nested exception is java.lang.ClassNotFoundException: com.nit.advices.LoggingBeforeAdvice
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1351)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:628)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:597)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1444)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:974)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:752)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:834)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:537)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:139)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:83)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.nit.aop.client.Test.main(Test.java:11)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Caused by: java.lang.ClassNotFoundException: com.nit.advices.LoggingBeforeAdvice
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.util.ClassUtils.forName(ClassUtils.java:250)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanDefinition.resolveBeanClass(AbstractBeanDefinition.java:394)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory.doResolveBeanClass(AbstractBeanFactory.java:1396)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1343)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	... 10 more
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sun Dec 25 22:36:03 IST 2016<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.context.support.ClassPathXmlApplicationContext category">org.springframework.context.support.ClassPathXmlApplicationContext</td>
+<td title="Message">Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@176f3f8: startup date [Sun Dec 25 22:36:03 IST 2016]; root of context hierarchy</td>
+</tr>
+
+<tr>
+<td>151</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.beans.factory.xml.XmlBeanDefinitionReader category">org.springframework.beans.factory.xml.XmlBeanDefinitionReader</td>
+<td title="Message">Loading XML bean definitions from class path resource [com/nit/aop/config/applicationContext.xml]</td>
+</tr>
+
+<tr>
+<td>478</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>WARN</strong></font></td>
+<td title="org.springframework.context.support.ClassPathXmlApplicationContext category">org.springframework.context.support.ClassPathXmlApplicationContext</td>
+<td title="Message">Exception encountered during context initialization - cancelling refresh attempt</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.nit.services.aop.CustomerServiceImpl] for bean with name 'cutomerService' defined in class path resource [com/nit/aop/config/applicationContext.xml]; nested exception is java.lang.ClassNotFoundException: com.nit.services.aop.CustomerServiceImpl
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1351)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:628)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:597)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1444)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:974)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:752)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:834)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:537)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:139)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:83)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.nit.aop.client.Test.main(Test.java:11)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Caused by: java.lang.ClassNotFoundException: com.nit.services.aop.CustomerServiceImpl
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.util.ClassUtils.forName(ClassUtils.java:250)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanDefinition.resolveBeanClass(AbstractBeanDefinition.java:394)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory.doResolveBeanClass(AbstractBeanFactory.java:1396)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1343)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	... 10 more
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sun Dec 25 22:36:52 IST 2016<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.context.support.ClassPathXmlApplicationContext category">org.springframework.context.support.ClassPathXmlApplicationContext</td>
+<td title="Message">Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@176f3f8: startup date [Sun Dec 25 22:36:52 IST 2016]; root of context hierarchy</td>
+</tr>
+
+<tr>
+<td>52</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.beans.factory.xml.XmlBeanDefinitionReader category">org.springframework.beans.factory.xml.XmlBeanDefinitionReader</td>
+<td title="Message">Loading XML bean definitions from class path resource [com/nit/aop/config/applicationContext.xml]</td>
+</tr>
+
+<tr>
+<td>481</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>WARN</strong></font></td>
+<td title="org.springframework.context.support.ClassPathXmlApplicationContext category">org.springframework.context.support.ClassPathXmlApplicationContext</td>
+<td title="Message">Exception encountered during context initialization - cancelling refresh attempt</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [org.springframework.aop.framework.ProxyFactoryBeans] for bean with name 'cutomerServiceProxy' defined in class path resource [com/nit/aop/config/applicationContext.xml]; nested exception is java.lang.ClassNotFoundException: org.springframework.aop.framework.ProxyFactoryBeans
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1351)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:628)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:597)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1444)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:974)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:752)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:834)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:537)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:139)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:83)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.nit.aop.client.Test.main(Test.java:11)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Caused by: java.lang.ClassNotFoundException: org.springframework.aop.framework.ProxyFactoryBeans
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.util.ClassUtils.forName(ClassUtils.java:250)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanDefinition.resolveBeanClass(AbstractBeanDefinition.java:394)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory.doResolveBeanClass(AbstractBeanFactory.java:1396)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1343)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	... 10 more
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sun Dec 25 22:38:50 IST 2016<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.context.support.ClassPathXmlApplicationContext category">org.springframework.context.support.ClassPathXmlApplicationContext</td>
+<td title="Message">Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@176f3f8: startup date [Sun Dec 25 22:38:50 IST 2016]; root of context hierarchy</td>
+</tr>
+
+<tr>
+<td>54</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.beans.factory.xml.XmlBeanDefinitionReader category">org.springframework.beans.factory.xml.XmlBeanDefinitionReader</td>
+<td title="Message">Loading XML bean definitions from class path resource [com/nit/aop/config/applicationContext.xml]</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sun Dec 25 22:38:50 IST 2016<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.context.support.ClassPathXmlApplicationContext category">org.springframework.context.support.ClassPathXmlApplicationContext</td>
+<td title="Message">Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@176f3f8: startup date [Sun Dec 25 22:38:50 IST 2016]; root of context hierarchy</td>
+</tr>
+
+<tr>
+<td>58</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.beans.factory.xml.XmlBeanDefinitionReader category">org.springframework.beans.factory.xml.XmlBeanDefinitionReader</td>
+<td title="Message">Loading XML bean definitions from class path resource [com/nit/aop/config/applicationContext.xml]</td>
+</tr>
+
+<tr>
+<td>2547</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>WARN</strong></font></td>
+<td title="org.springframework.context.support.ClassPathXmlApplicationContext category">org.springframework.context.support.ClassPathXmlApplicationContext</td>
+<td title="Message">Exception encountered during context initialization - cancelling refresh attempt</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cutomerServiceProxy' defined in class path resource [com/nit/aop/config/applicationContext.xml]: Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'proxyInterface' of bean class [org.springframework.aop.framework.ProxyFactoryBean]: Bean property 'proxyInterface' is not writable or has an invalid setter method. Did you mean 'proxyInterfaces'?
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1518)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1226)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:305)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:301)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:753)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:834)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:537)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:139)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:83)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.nit.aop.client.Test.main(Test.java:11)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Caused by: org.springframework.beans.NotWritablePropertyException: Invalid property 'proxyInterface' of bean class [org.springframework.aop.framework.ProxyFactoryBean]: Bean property 'proxyInterface' is not writable or has an invalid setter method. Did you mean 'proxyInterfaces'?
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.BeanWrapperImpl.createNotWritablePropertyException(BeanWrapperImpl.java:229)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.AbstractNestablePropertyAccessor.setPropertyValue(AbstractNestablePropertyAccessor.java:423)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.AbstractNestablePropertyAccessor.setPropertyValue(AbstractNestablePropertyAccessor.java:280)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:95)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:75)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1514)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	... 13 more
+</td></tr>
+
+<tr>
+<td>2723</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>WARN</strong></font></td>
+<td title="org.springframework.context.support.ClassPathXmlApplicationContext category">org.springframework.context.support.ClassPathXmlApplicationContext</td>
+<td title="Message">Exception encountered during context initialization - cancelling refresh attempt</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cutomerServiceProxy' defined in class path resource [com/nit/aop/config/applicationContext.xml]: Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'proxyInterface' of bean class [org.springframework.aop.framework.ProxyFactoryBean]: Bean property 'proxyInterface' is not writable or has an invalid setter method. Did you mean 'proxyInterfaces'?
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1518)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1226)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:305)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:301)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:753)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:834)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:537)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:139)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:83)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.nit.aop.client.Test.main(Test.java:11)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Caused by: org.springframework.beans.NotWritablePropertyException: Invalid property 'proxyInterface' of bean class [org.springframework.aop.framework.ProxyFactoryBean]: Bean property 'proxyInterface' is not writable or has an invalid setter method. Did you mean 'proxyInterfaces'?
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.BeanWrapperImpl.createNotWritablePropertyException(BeanWrapperImpl.java:229)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.AbstractNestablePropertyAccessor.setPropertyValue(AbstractNestablePropertyAccessor.java:423)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.AbstractNestablePropertyAccessor.setPropertyValue(AbstractNestablePropertyAccessor.java:280)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:95)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:75)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1514)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	... 13 more
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sun Dec 25 22:39:50 IST 2016<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.context.support.ClassPathXmlApplicationContext category">org.springframework.context.support.ClassPathXmlApplicationContext</td>
+<td title="Message">Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@176f3f8: startup date [Sun Dec 25 22:39:50 IST 2016]; root of context hierarchy</td>
+</tr>
+
+<tr>
+<td>52</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.beans.factory.xml.XmlBeanDefinitionReader category">org.springframework.beans.factory.xml.XmlBeanDefinitionReader</td>
+<td title="Message">Loading XML bean definitions from class path resource [com/nit/aop/config/applicationContext.xml]</td>
+</tr>
+
+<tr>
+<td>276</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>WARN</strong></font></td>
+<td title="org.springframework.context.support.ClassPathXmlApplicationContext category">org.springframework.context.support.ClassPathXmlApplicationContext</td>
+<td title="Message">Exception encountered during context initialization - cancelling refresh attempt</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cutomerServiceProxy' defined in class path resource [com/nit/aop/config/applicationContext.xml]: Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'interceptorName' of bean class [org.springframework.aop.framework.ProxyFactoryBean]: Bean property 'interceptorName' is not writable or has an invalid setter method. Did you mean 'interceptorNames'?
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1518)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1226)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:305)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:301)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:753)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:834)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:537)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:139)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:83)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.nit.aop.client.Test.main(Test.java:11)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Caused by: org.springframework.beans.NotWritablePropertyException: Invalid property 'interceptorName' of bean class [org.springframework.aop.framework.ProxyFactoryBean]: Bean property 'interceptorName' is not writable or has an invalid setter method. Did you mean 'interceptorNames'?
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.BeanWrapperImpl.createNotWritablePropertyException(BeanWrapperImpl.java:229)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.AbstractNestablePropertyAccessor.setPropertyValue(AbstractNestablePropertyAccessor.java:423)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.AbstractNestablePropertyAccessor.setPropertyValue(AbstractNestablePropertyAccessor.java:280)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:95)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:75)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1514)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	... 13 more
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sun Dec 25 22:40:40 IST 2016<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.context.support.ClassPathXmlApplicationContext category">org.springframework.context.support.ClassPathXmlApplicationContext</td>
+<td title="Message">Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@176f3f8: startup date [Sun Dec 25 22:40:40 IST 2016]; root of context hierarchy</td>
+</tr>
+
+<tr>
+<td>51</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.beans.factory.xml.XmlBeanDefinitionReader category">org.springframework.beans.factory.xml.XmlBeanDefinitionReader</td>
+<td title="Message">Loading XML bean definitions from class path resource [com/nit/aop/config/applicationContext.xml]</td>
+</tr>
+
+<tr>
+<td>274</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>WARN</strong></font></td>
+<td title="org.springframework.context.support.ClassPathXmlApplicationContext category">org.springframework.context.support.ClassPathXmlApplicationContext</td>
+<td title="Message">Exception encountered during context initialization - cancelling refresh attempt</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cutomerServiceProxy' defined in class path resource [com/nit/aop/config/applicationContext.xml]: Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'interceptorName' of bean class [org.springframework.aop.framework.ProxyFactoryBean]: Bean property 'interceptorName' is not writable or has an invalid setter method. Did you mean 'interceptorNames'?
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1518)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1226)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:305)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:301)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:753)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:834)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:537)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:139)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:83)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.nit.aop.client.Test.main(Test.java:11)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Caused by: org.springframework.beans.NotWritablePropertyException: Invalid property 'interceptorName' of bean class [org.springframework.aop.framework.ProxyFactoryBean]: Bean property 'interceptorName' is not writable or has an invalid setter method. Did you mean 'interceptorNames'?
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.BeanWrapperImpl.createNotWritablePropertyException(BeanWrapperImpl.java:229)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.AbstractNestablePropertyAccessor.setPropertyValue(AbstractNestablePropertyAccessor.java:423)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.AbstractNestablePropertyAccessor.setPropertyValue(AbstractNestablePropertyAccessor.java:280)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:95)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:75)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1514)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	... 13 more
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sun Dec 25 22:41:15 IST 2016<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.context.support.ClassPathXmlApplicationContext category">org.springframework.context.support.ClassPathXmlApplicationContext</td>
+<td title="Message">Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@176f3f8: startup date [Sun Dec 25 22:41:15 IST 2016]; root of context hierarchy</td>
+</tr>
+
+<tr>
+<td>52</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.beans.factory.xml.XmlBeanDefinitionReader category">org.springframework.beans.factory.xml.XmlBeanDefinitionReader</td>
+<td title="Message">Loading XML bean definitions from class path resource [com/nit/aop/config/applicationContext.xml]</td>
+</tr>
+
+<tr>
+<td>447</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>WARN</strong></font></td>
+<td title="org.springframework.context.support.ClassPathXmlApplicationContext category">org.springframework.context.support.ClassPathXmlApplicationContext</td>
+<td title="Message">Exception encountered during context initialization - cancelling refresh attempt</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cutomerServiceProxy' defined in class path resource [com/nit/aop/config/applicationContext.xml]: Initialization of bean failed; nested exception is org.springframework.beans.ConversionNotSupportedException: Failed to convert property value of type 'com.nit.aop.advices.LoggingBeforeAdvice' to required type 'java.lang.String[]' for property 'interceptorNames'; nested exception is java.lang.IllegalStateException: Cannot convert value of type [com.nit.aop.advices.LoggingBeforeAdvice] to required type [java.lang.String] for property 'interceptorNames[0]': no matching editors or conversion strategy found
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:305)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:301)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:753)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:834)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:537)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:139)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:83)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.nit.aop.client.Test.main(Test.java:11)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Caused by: org.springframework.beans.ConversionNotSupportedException: Failed to convert property value of type 'com.nit.aop.advices.LoggingBeforeAdvice' to required type 'java.lang.String[]' for property 'interceptorNames'; nested exception is java.lang.IllegalStateException: Cannot convert value of type [com.nit.aop.advices.LoggingBeforeAdvice] to required type [java.lang.String] for property 'interceptorNames[0]': no matching editors or conversion strategy found
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.AbstractNestablePropertyAccessor.convertIfNecessary(AbstractNestablePropertyAccessor.java:591)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.AbstractNestablePropertyAccessor.convertForProperty(AbstractNestablePropertyAccessor.java:603)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.BeanWrapperImpl.convertForProperty(BeanWrapperImpl.java:201)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.convertForProperty(AbstractAutowireCapableBeanFactory.java:1527)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1486)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1226)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	... 11 more
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Caused by: java.lang.IllegalStateException: Cannot convert value of type [com.nit.aop.advices.LoggingBeforeAdvice] to required type [java.lang.String] for property 'interceptorNames[0]': no matching editors or conversion strategy found
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:302)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:143)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.TypeConverterDelegate.convertToTypedArray(TypeConverterDelegate.java:499)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:212)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.AbstractNestablePropertyAccessor.convertIfNecessary(AbstractNestablePropertyAccessor.java:576)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	... 17 more
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sun Dec 25 22:41:34 IST 2016<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.context.support.ClassPathXmlApplicationContext category">org.springframework.context.support.ClassPathXmlApplicationContext</td>
+<td title="Message">Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@176f3f8: startup date [Sun Dec 25 22:41:34 IST 2016]; root of context hierarchy</td>
+</tr>
+
+<tr>
+<td>53</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.beans.factory.xml.XmlBeanDefinitionReader category">org.springframework.beans.factory.xml.XmlBeanDefinitionReader</td>
+<td title="Message">Loading XML bean definitions from class path resource [com/nit/aop/config/applicationContext.xml]</td>
+</tr>
+
+<tr>
+<td>450</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.nit.aop.services.CustomerServiceImpl category">com.nit.aop.services.CustomerServiceImpl</td>
+<td title="Message">Entered into com.nit.aop.services.CustomerServiceImpl Class printName Method with the argument0</td>
+</tr>
+
+<tr>
+<td>451</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.nit.aop.services.CustomerServiceImpl category">com.nit.aop.services.CustomerServiceImpl</td>
+<td title="Message">Entered into com.nit.aop.services.CustomerServiceImpl Class printURL Method with the argument0</td>
+</tr>
+
+<tr>
+<td>452</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.nit.aop.services.CustomerServiceImpl category">com.nit.aop.services.CustomerServiceImpl</td>
+<td title="Message">Entered into com.nit.aop.services.CustomerServiceImpl Class printException Method with the argument0</td>
+</tr>

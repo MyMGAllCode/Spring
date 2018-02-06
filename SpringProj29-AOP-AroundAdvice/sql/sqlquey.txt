@@ -1,0 +1,2 @@
+SQL> create table account(accountID number(5) primary key,name varchar2(20),bala
+nce number(7));
