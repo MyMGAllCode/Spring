@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd">
+	<bean id="abc" class="com.nit.aop.advices.LoggingAfterAdvice"></bean>
+	
+	<bean id="loggingafterAdvice" class="com.nit.aop.advices.LoggingAfterAdvice" />
+	<bean id="loggingBeforeAdvice" class="com.nit.aop.advices.LoggingBeforeAdvice" />
+	
+	<bean id="customerService" class="com.nit.aop.services.CustomerServiceImpl">
+		<property name="name" value="Dahrmendra" />
+		<property name="url" value="http://www.seekzed.com" />
+	</bean>
+	
+	
+	
+	
+	<aop:config>
+		<aop:pointcut expression="within(com.nit.aop.services.CustomerServiceImpl)"
+			id="myPointcutRef" />
+		
+		<aop:aspect ref="loggingBeforeAdvice">
+			<aop:before method="beforeAdvice" pointcut-ref="myPointcutRef" />
+		</aop:aspect>
+		
+		<aop:aspect ref="loggingafterAdvice">
+			<aop:after-returning method="afterAdvice" pointcut-ref="myPointcutRef"   returning="returningValue"  />
+		</aop:aspect>
+		
+	</aop:config>
+	
+	
+
+</beans>
